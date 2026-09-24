@@ -1,0 +1,85 @@
+[
+  {
+    "id": "conv-synthetic-001",
+    "conversation_id": "conv-synthetic-001",
+    "title": "Synthetic garden planning",
+    "create_time": 1704067200,
+    "update_time": 1704067380,
+    "is_archived": false,
+    "is_starred": true,
+    "default_model_slug": "example-model",
+    "current_node": "node-3",
+    "mapping": {
+      "node-0": {
+        "id": "node-0",
+        "parent": null,
+        "message": null
+      },
+      "node-1": {
+        "id": "node-1",
+        "parent": "node-0",
+        "message": {
+          "id": "message-1",
+          "author": {"role": "user"},
+          "create_time": 1704067200,
+          "content": {
+            "content_type": "text",
+            "parts": ["Help me plan a completely fictional balcony garden."]
+          },
+          "metadata": {
+            "attachments": [
+              {
+                "id": "file-synthetic-001",
+                "name": "garden-notes.txt",
+                "mime_type": "text/plain",
+                "size": 29
+              }
+            ]
+          }
+        }
+      },
+      "node-2": {
+        "id": "node-2",
+        "parent": "node-1",
+        "message": {
+          "id": "message-2",
+          "author": {"role": "assistant"},
+          "create_time": 1704067260,
+          "content": {
+            "content_type": "text",
+            "parts": ["Start with three imaginary pots: herbs, flowers, and tomatoes."]
+          },
+          "metadata": {}
+        }
+      },
+      "node-3": {
+        "id": "node-3",
+        "parent": "node-2",
+        "message": {
+          "id": "message-3",
+          "author": {"role": "user"},
+          "create_time": 1704067380,
+          "content": {
+            "content_type": "text",
+            "parts": ["Turn that fictional plan into a weekend checklist."]
+          },
+          "metadata": {}
+        }
+      },
+      "node-alternate": {
+        "id": "node-alternate",
+        "parent": "node-1",
+        "message": {
+          "id": "message-alternate",
+          "author": {"role": "assistant"},
+          "create_time": 1704067300,
+          "content": {
+            "content_type": "text",
+            "parts": ["This synthetic alternate branch must not be selected."]
+          },
+          "metadata": {}
+        }
+      }
+    }
+  }
+]
